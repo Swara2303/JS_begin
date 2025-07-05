@@ -8,6 +8,9 @@ let name = " Swara" //string
 let age = 18  //Number
 let isLoggedIn = true //Bool
 
+let thisVal; //Undefined 
+let thisTemp = null // null
+
 //Number : max 2 to power 53
 //bigInt 
 //string : " "
