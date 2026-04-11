@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events2</title>
+</head>
+<body>
+    <h1>Asynchronous JS</h1>
+    <button class="click">STOP</button>
+
+
+</body>
+<script>
+    const saySwara = function(){
+        console.log("Swara");
+    }
+    const changeh1 = function(){
+        document.querySelector('h1').innerHTML = 'NEW HEADING';
+    }
+     const st = setTimeout(changeh1 , 4000);
+     
+     document.querySelector('.click').addEventListener('click' , function(){
+        clearTimeout(st);
+     })
+
+</script>
+</html>
